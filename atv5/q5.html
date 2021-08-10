@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Formulário</title>
+    </head>
+    <body>
+        <header align="center">
+            <h1>Dados</h1>
+        </header>
+        <form action="" method="POST">
+            <fieldset style="margin-left: 40%; width: 19%;">
+                <legend>Formulário</legend>
+                <label for="nome_completo"><b>Nome completo</b></label>
+                <input type="text" id="nome_completo" name="nome_completo" required>
+                <br /><br />
+                <label for="data_de_nascimento"><b>Data de nascimento</b></label>
+                <input type="date" name="data_de_nascimento" id="data_de_nascimento" required>
+                <br /><br />
+                
+                <section>
+                    <label for="estados"><b>Selecione o estado em que mora:</b></label> <br>
+                    <select name="estados" id="estados" required>
+                        <option value="estado" selected disabled>Estado</option>
+                        <option value="ac">Acre</option>
+                        <option value="al">Alagoas</option>
+                        <option value="ap">Amapá</option>
+                        <option value="am">Amazonas</option>
+                        <option value="ba">Bahia</option>
+                        <option value="ce">Ceará</option>
+                        <option value="es">Espírito Santo</option>
+                        <option value="go">Goiás</option>
+                        <option value="ma">Maranhão</option>
+                        <option value="mt">Mato Grosso</option>
+                        <option value="ms">Mato Grosso do Sul</option>
+                        <option value="mg">Minas Gerais</option>
+                        <option value="pa">Pará</option>
+                        <option value="pb">Paraíba</option>
+                        <option value="pr">Paraná</option>
+                        <option value="pe">Pernambuco</option>
+                        <option value="pi">Piauí</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="rn">Rio Grande do Norte</option>
+                        <option value="rs">Rio Grande do Sul</option>
+                        <option value="ro">Rondônia</option>
+                        <option value="rr">Roraima</option>
+                        <option value="sc">Santa Catarina</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="se">Sergipe</option>
+                        <option value="to">Tocantins</option>
+                        <option value="df">Distrito Federal</option>
+                    </select>
+                </section>
+                <section style="margin-left: 250px;">
+                    <label><b>Gênero:</b></label> <br>
+                    <input type="radio" id="feminino" name="genero" value="feminino">
+                    <label for="feminino">Feminino</label><br />
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino">Masculino</label><br />
+                    <input type="radio" id="outro" name="genero" value="outro">
+                    <label for="outro">Outro</label>
+                </section>
+                <br /><br />
+                <label for="numeros">5 + 4 é?</label>
+                <input type="number" id="numeros" style="width: 50px;" name="numeros" required>
+                <input type="submit" value="Salvar" style="margin-left: 80px; width: 100px;" id="botao">
+            </fieldset>
+        </form>
+    </body>
+</html>
